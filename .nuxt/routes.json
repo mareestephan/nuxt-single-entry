@@ -1,0 +1,23 @@
+[
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Applications/Personal/Werk/Nuxt/ssr-single-entry copy/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_62ce579d"
+  },
+  {
+    "name": "cat",
+    "path": "/:cat",
+    "component": "/Applications/Personal/Werk/Nuxt/ssr-single-entry copy/pages/_cat/index.vue",
+    "chunkName": "pages/_cat/index",
+    "_name": "_06b1f81f"
+  },
+  {
+    "name": "cat-ssr-slug",
+    "path": "/:cat/ssr/:slug?",
+    "component": "/Applications/Personal/Werk/Nuxt/ssr-single-entry copy/pages/_cat/ssr/_slug.vue",
+    "chunkName": "pages/_cat/ssr/_slug",
+    "_name": "_777c089a"
+  }
+]
