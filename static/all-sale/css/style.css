@@ -18,26 +18,26 @@
 
 @font-face {
   font-family: 'FontAwesome';
-  src: format("embedded-opentype"), url("../fonts/FontAwesome/fa-light-300.ttf") format("truetype"), url("../fonts/FontAwesome/fa-light-300.woff") format("woff");
+  src: url("../fonts/FontAwesome/fa-light-300.eot") format("embedded-opentype"), url("../fonts/FontAwesome/fa-light-300.ttf") format("truetype"), url("../fonts/FontAwesome/fa-light-300.woff") format("woff");
   font-weight: lighter;
 }
 
 @font-face {
   font-family: 'FontAwesome';
-  src: format("embedded-opentype"), url("../fonts/FontAwesome/fa-brands-400.ttf") format("truetype"), url("../fonts/FontAwesome/fa-brands-400.woff") format("woff");
+  src: url("../fonts/FontAwesome/fa-brands-400.eot") format("embedded-opentype"), url("../fonts/FontAwesome/fa-brands-400.ttf") format("truetype"), url("../fonts/FontAwesome/fa-brands-400.woff") format("woff");
   font-weight: normal;
   font-style: oblique;
 }
 
 @font-face {
   font-family: 'FontAwesome';
-  src: format("embedded-opentype"), url("../fonts/FontAwesome/fa-regular-400.ttf") format("truetype"), url("../fonts/FontAwesome/fa-regular-400.woff") format("woff");
+  src: url("../fonts/FontAwesome/fa-regular-400.eot") format("embedded-opentype"), url("../fonts/FontAwesome/fa-regular-400.ttf") format("truetype"), url("../fonts/FontAwesome/fa-regular-400.woff") format("woff");
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'FontAwesome';
-  src: format("embedded-opentype"), url("../fonts/FontAwesome/fa-solid-900.ttf") format("truetype"), url("../fonts/FontAwesome/fa-solid-900.woff") format("woff");
+  src: url("../fonts/FontAwesome/fa-solid-900.eot") format("embedded-opentype"), url("../fonts/FontAwesome/fa-solid-900.ttf") format("truetype"), url("../fonts/FontAwesome/fa-solid-900.woff") format("woff");
   font-weight: bold;
 }
 
@@ -394,8 +394,8 @@ input[type="search"]::-webkit-search-results-decoration {
   box-shadow: none;
 }
 
-/* button.dropdown-toggle::after {
-  content: url("../../../assets/all-sale/icons/caret-down.svg") !important;
+button.dropdown-toggle::after {
+  content: url("../../../assets/all-sale/_icons/caret-down.svg") !important;
   position: absolute;
   border-top: none !important;
   border-right: none !important;
@@ -407,12 +407,11 @@ input[type="search"]::-webkit-search-results-decoration {
   right: 5%;
   float: right;
   box-shadow: none;
-} */
+}
 
-/* button.dropdown-toggle[aria-expanded='true']::after {
-  content: url("../../../assets/all-sale/icons/caret-down-white.svg");
-
-} */
+button.dropdown-toggle[aria-expanded='true']::after {
+  content: url("../../../assets/all-sale/_icons/caret-down-white.svg");
+}
 
 .form-control {
   display: block;
@@ -1145,14 +1144,14 @@ input.is-invalid {
   background-color: #e2e7eb !important;
 }
 
-/* .back-button::before {
-  content: url("../../../assets/all-sale/hev-left-dark-teal.svg");
+.back-button::before {
+  content: url("../../../assets/all-sale/chev-left-dark-teal.svg");
   width: 1em;
   height: 1em;
   top: 0;
   color: #2e8c94;
   margin-right: .5em;
-} */
+}
 
 header {
   background: #fff;
@@ -1365,12 +1364,11 @@ header a {
   background-color: #fff;
 }
 
-/* .header-grid .header-search-bar button.dropdown-toggle::after {
+.header-grid .header-search-bar button.dropdown-toggle::after {
   top: 20%;
   right: 1em;
   content: url("../../../assets/all-sale/_icons/caret-down-grey.svg") !important;
-
-} */
+}
 
 .header-grid .header-search-bar .input-group-prepend {
   border-width: 1px 0 1px 1px;
@@ -3154,7 +3152,6 @@ a:hover {
 
 .icon-return {
   content: url("../../../assets/all-sale/_icons/caret-up.svg");
-
 }
 
 #scroll-to-top {
@@ -3344,7 +3341,6 @@ textarea.form-control {
   font-weight: bold;
 }
 
-/* 
 .search-products .dropdown button::after {
   content: url("../../../assets/all-sale/_icons/caret-down.svg");
   position: relative;
@@ -3359,12 +3355,11 @@ textarea.form-control {
   display: inline-flex;
   vertical-align: -.3em;
   left: 1px;
-} */
+}
 
-/* .search-products .dropdown[aria-expanded='true'] button::after {
+.search-products .dropdown[aria-expanded='true'] button::after {
   content: url("../../../assets/all-sale/_icons/caret-down-white.svg");
-
-} */
+}
 
 .search-products .dropdown-menu {
   max-width: 100% !important;
@@ -4195,7 +4190,6 @@ input.text-muted:-ms-input-placeholder {
 
 .side-collapse-menu a[aria-expanded='true']:after {
   content: url("../../../assets/all-sale/_icons/minus.svg");
-
 }
 
 .v-middle {
@@ -4223,7 +4217,6 @@ input.text-muted:-ms-input-placeholder {
 
 .collapse-link div>a[aria-expanded='true']:after {
   content: url("../../../assets/all-sale/_icons/minus.svg") !important;
-
 }
 
 .pagination {
@@ -5985,7 +5978,7 @@ a.teal-underline:visited {
 
 .fb-button::before {
   content: '';
-  background-image: url("../../../assets/all-sale/fb.svg");
+  background-image: url("/assets/fb.svg");
   background-repeat: no-repeat;
   background-size: contain;
   color: #fff;
@@ -6005,7 +5998,7 @@ a.teal-underline:visited {
 .gp-button::before {
   content: '';
   color: #fff;
-  background-image: url("../../../assets/all-sale/gplus.svg");
+  background-image: url("/assets/gplus.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -6153,7 +6146,7 @@ a.teal-underline:visited {
   right: 30%;
 }
 
-/* .select-selected:after {
+.select-selected:after {
   content: url("../../../assets/all-sale/_icons/caret-down.svg") !important;
   position: absolute;
   border-top: none !important;
@@ -6166,7 +6159,7 @@ a.teal-underline:visited {
   right: 5%;
   float: right;
   box-shadow: none;
-} */
+}
 
 .without-after:after {
   display: none;
@@ -6817,12 +6810,11 @@ a.teal-underline:visited {
     max-height: 3.1rem;
   }
 
-  /* .header-grid .header-search-bar button.dropdown-toggle::after {
+  .header-grid .header-search-bar button.dropdown-toggle::after {
     top: 22%;
     right: .7em;
     content: url("../../../assets/all-sale/_icons/caret-down-white.svg") !important;
-
-  } */
+  }
 
   .header-grid .header-search-bar .dropdown-menu.show {
     max-width: 90.4% !important;

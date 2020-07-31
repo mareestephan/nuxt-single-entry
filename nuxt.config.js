@@ -5,7 +5,8 @@ export default {
     '@/plugins/vue-placeholders.js'
   ],
   modules: [
-    '@nuxt/http'
+    '@nuxt/http',
+    'bootstrap-vue/nuxt'
   ],
   generate: {
     async routes() {

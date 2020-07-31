@@ -3,6 +3,7 @@
   "dependencies": {
     "@nuxt/http": "^0.3.8",
     "axios": "^0.19.2",
+    "bootstrap-vue": "^2.16.0",
     "nuxt-start": "latest",
     "vue-content-placeholders": "^0.2.1"
   },
