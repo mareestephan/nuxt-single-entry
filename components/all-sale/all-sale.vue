@@ -1263,6 +1263,8 @@
 
 <script>
 import axios from "axios";
+import API_route from "@/components/api";
+
 export default {
   data() {
     return {
@@ -1270,12 +1272,9 @@ export default {
     };
   },
   async fetch() {
-    const { data } = await axios.get(
-      `http://35.190.35.153/system-api/pages-to-create/all-sale`
-    );
+    const { data } = await axios.get(`${API_route.api}all-sale`);
     // `todos` has to be declared in data()
     this.posts = data.pages_to_create;
-    console.log(this.$route.params);
   },
   head() {
     return {

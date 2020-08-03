@@ -1294,12 +1294,12 @@
 <script>
 import axios from "axios";
 
+import API_route from "@/components/api";
+
 export default {
   async fetch() {
     const res = await axios.get(
-      `http://35.190.35.153/system-api/pages-to-create/all-sale?slug=${
-        this.$route.params.slug
-      }`
+      `${API_route.api}all-sale?slug=${this.$route.params.slug}`
     );
     this.posts = res.data.pages_to_create[0];
   },
@@ -1319,28 +1319,27 @@ export default {
         }
       ],
       script: [
-    //     {
-    //       src:
-    //         "https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    //     },
-    //     {
-    //       src:
-    //         "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    //     },
+        //     {
+        //       src:
+        //         "https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        //     },
+        //     {
+        //       src:
+        //         "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        //     },
         // {
         //   src:
         //     "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         // }
       ],
-        link: [
-          {
-            rel: "stylesheet",
-            type: "text/css",
-            href:
-              "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-          }
-        ]
-     
+      link: [
+        {
+          rel: "stylesheet",
+          type: "text/css",
+          href:
+            "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        }
+      ]
     };
   }
 };
