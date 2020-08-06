@@ -1,20 +1,22 @@
 const fetch = require('node-fetch')
 
 export default {
-  plugins: [
-    '@/plugins/vue-placeholders.js'
-  ],
+  plugins: [],
+  link: [{
+    rel: "stylesheet",
+    type: "text/css",
+    href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  }],
   modules: [
-    '@nuxt/http',
-    'bootstrap-vue/nuxt'
+    '@nuxt/http'
   ],
   generate: {
-    async routes() {
-      const posts = await fetch('http://35.190.35.153/system-api/pages-to-create/all-sale')
-      const routes = posts.map(post => `/posts/${post.id}`)
+    // async routes() {
+    //   const posts = await fetch('http://35.190.35.153/system-api/pages-to-create/all-sale')
+    //   const routes = posts.map(post => `/posts/${post.id}`)
 
-      return ['/'].concat(routes)
-    }
+    //   return ['/'].concat(routes)
+    // }
   }
 
 }

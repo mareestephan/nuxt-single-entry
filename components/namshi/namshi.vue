@@ -91,11 +91,11 @@
           </div>
         </div>
 
-       <!-- ++++++++++++++++++ start NAVBAR HEADER SECTION ++++++++++++++ -->
+        <!-- ++++++++++++++++++ start NAVBAR HEADER SECTION ++++++++++++++ -->
 
-                <HeaderNamshi/>
+        <HeaderNamshi/>
 
-                <!-- ++++++++++++++++++ end NAVBAR HEADER SECTION ++++++++++++++ -->
+        <!-- ++++++++++++++++++ end NAVBAR HEADER SECTION ++++++++++++++ -->
 
         <div id="content">
           <div class="site_width_container">
@@ -207,7 +207,6 @@
                             <a href="" name="productview"></a>
                             <div id="listAddToBag"></div>
                             <ul ul id="catalog_listings" class="less">
-                              <h1> EXAMPLE PRODUCTS </h1>
 
                               <!-- ++++++++++++++++ START NAMSHI CATEGORIES ++++++++++++++ -->
 
@@ -314,7 +313,7 @@
 <script>
 import axios from "axios";
 
-import API_route from '@/components/api'
+import API_route from "@/components/api";
 
 import HeaderNamshi from "./namshi-page/HeaderNamshi.vue";
 import ProductsToggleNamshi from "./namshi-page/ProductsToggleNamshi.vue";
@@ -337,10 +336,8 @@ export default {
     // const { data } = await axios.get(
     //   `http://35.190.35.153/system-api/pages-to-create/all-sale`
     // );
-    
-    const { data } = await axios.get(
-      `${API_route.api}namshi`
-    );
+
+    const { data } = await axios.get(`${API_route.api}namshi`);
     this.posts = data.pages_to_create;
     // console.log(this.$route.params);
   },
@@ -398,18 +395,18 @@ export default {
 </script>
 
 <style>
- .catalog_banner_top.tb_three {
-                  height: 180px;
-                }
+.catalog_banner_top.tb_three {
+  height: 180px;
+}
 
-                .catalog_banner_top.tb_three h2.tb_title {
-                  font-weight: bold;
-                  text-transform: none;
-                }
+.catalog_banner_top.tb_three h2.tb_title {
+  font-weight: bold;
+  text-transform: none;
+}
 
-                .ar .catalog_banner_top.tb_three p.cat_description {
-                  padding-top: 2%;
-                }
+.ar .catalog_banner_top.tb_three p.cat_description {
+  padding-top: 2%;
+}
 </style>
 
 

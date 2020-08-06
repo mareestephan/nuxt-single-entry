@@ -316,9 +316,9 @@
 
 <script>
 export default {
-  props: {
-    data: {}
-  }
+  //   props: {
+  //     data: {}
+  //   }
 };
 </script>
 
