@@ -2,11 +2,7 @@ const fetch = require('node-fetch')
 
 export default {
   plugins: [],
-  link: [{
-    rel: "stylesheet",
-    type: "text/css",
-    href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  }],
+  link: [],
   modules: [
     '@nuxt/http'
   ],
