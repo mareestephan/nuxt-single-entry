@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <component :is="componentSitemap" /> -->
-    <h1>Sitemap Test Routing from {{this.$route.params.cat}}</h1>
+    <h1>Sitemap New Routing for {{this.$route.params.cat}}</h1>
 
   </div>
 
