@@ -315,9 +315,9 @@ import API_route from "@/components/api";
 
 // COMPONENTS
 
-import HeaderNamshi from "./namshi-page/HeaderNamshi.vue";
-import ProductsToggleNamshi from "./namshi-page/ProductsToggleNamshi.vue";
-import FooterNamshi from "./namshi-page/FooterNamshi.vue";
+import HeaderNamshi from "./namshi-components/HeaderNamshi.vue";
+import ProductsToggleNamshi from "./namshi-components/ProductsToggleNamshi.vue";
+import FooterNamshi from "./namshi-components/FooterNamshi.vue";
 
 export default {
   components: {

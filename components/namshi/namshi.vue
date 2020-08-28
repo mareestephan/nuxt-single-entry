@@ -93,7 +93,7 @@
 
         <!-- ++++++++++++++++++ start NAVBAR HEADER SECTION ++++++++++++++ -->
 
-        <HeaderNamshi/>
+        <!-- <HeaderNamshi/> -->
 
         <!-- ++++++++++++++++++ end NAVBAR HEADER SECTION ++++++++++++++ -->
 
@@ -288,7 +288,6 @@
         </div>
 
         <!-- +++++++++++++++ start FOOTER SECTION +++++++++++++++ -->
-
         <FooterNamshi />
 
         <!-- +++++++++++++++ end FOOTER SECTION +++++++++++++++ -->
@@ -306,18 +305,18 @@
 
 </template>
 
-  
-  
-
 
 <script>
+// AXIOS FOR FETCH
 import axios from "axios";
 
+// IMPORT API STRING
 import API_route from "@/components/api";
 
-import HeaderNamshi from "./namshi-page/HeaderNamshi.vue";
-import ProductsToggleNamshi from "./namshi-page/ProductsToggleNamshi.vue";
-import FooterNamshi from "./namshi-page/FooterNamshi.vue";
+// COMPONENTS
+import HeaderNamshi from "./namshi-components/HeaderNamshi.vue";
+import ProductsToggleNamshi from "./namshi-components/ProductsToggleNamshi.vue";
+import FooterNamshi from "./namshi-components/FooterNamshi.vue";
 
 export default {
   components: {
@@ -338,6 +337,7 @@ export default {
     // );
 
     const { data } = await axios.get(`${API_route.api}namshi`);
+
     this.posts = data.pages_to_create;
     // console.log(this.$route.params);
   },

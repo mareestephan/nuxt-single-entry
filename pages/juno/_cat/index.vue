@@ -10,7 +10,7 @@ export default {
   computed: {
     componentShop() {
       return () =>
-        import(`../../components/${this.$route.params.cat}/${
+        import(`@/components/${this.$route.params.cat}/${
           this.$route.params.cat
         }`);
     }

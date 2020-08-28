@@ -5,6 +5,7 @@
                 <div class=" d-flex d-sm-none mb-0 mb-sm-5 logo">
                     <a href="https://www.allsale.co.za/"><img src="@/assets/all-sale/new-logo.svg" width="100%" aria-label="website logo"></a>
                 </div>
+                <h1>FOOOTER!</h1>
                 <div class="col-12 col-md-3 guide">
                     <span class="heading">GET STUFF</span>
                     <ul class="list-unstyled">

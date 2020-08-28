@@ -108,9 +108,9 @@
     </div>
 
     <!-- +++++++++++++++ start FOOTER SECTION +++++++++++++++ -->
-
+    <!-- <client-only> -->
     <FooterAllSale />
-
+    <!-- </client-only> -->
     <!-- +++++++++++++++ end FOOTER SECTION +++++++++++++++ -->
 
   </div>
@@ -131,9 +131,9 @@ import API_route from "@/components/api";
 
 // COMPONENTS
 
-import FooterAllSale from "./allsale-page/FooterAllSale.vue";
-import ProductsToggleAllSale from "./allsale-page/ProductsToggleAllSale.vue";
-import HeaderAllSale from "./allsale-page/HeaderAllSale.vue";
+import FooterAllSale from "./allsale-components/FooterAllSale.vue";
+import ProductsToggleAllSale from "./allsale-components/ProductsToggleAllSale.vue";
+import HeaderAllSale from "./allsale-components/HeaderAllSale.vue";
 
 export default {
   components: {
@@ -141,16 +141,20 @@ export default {
     ProductsToggleAllSale,
     HeaderAllSale
   },
+
   data() {
     return {
       posts: []
     };
   },
-  async fetch() {
-    const { data } = await axios.get(`${API_route.api}all-sale`);
 
+  async fetch() {
+    console.log("Hierdie werk nie");
+    const { data } = await axios.get(`${API_route.api}all-sale`);
+    console.log("Hierdie werk, no data.");
     this.posts = data.pages_to_create;
   },
+
   head() {
     return {
       title: ["Categories | AllSale Club"],
@@ -173,6 +177,7 @@ export default {
           crossorigin: "anonymous"
         }
       ],
+
       link: [
         {
           rel: "stylesheet",
@@ -194,22 +199,6 @@ export default {
       ]
     };
   }
-  // props: {
-  //   posts: {
-  //     type: Object,
-  //     default: null
-  //   }
-  // }
-  // async fetch() {
-  //   this.posts = await this.$http.$get(
-  //     "http://35.190.35.153/system-api/pages-to-create/all-sale"
-  //   );
-  // },
-  // data() {
-  //   return {
-  //     posts: []
-  //   };
-  // }
 };
 </script>
 

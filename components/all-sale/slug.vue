@@ -131,9 +131,9 @@ import axios from "axios";
 
 import API_route from "@/components/api";
 
-import FooterAllSale from "./allsale-page/FooterAllSale.vue";
-import ProductsToggleAllSale from "./allsale-page/ProductsToggleAllSale.vue";
-import HeaderAllSale from "./allsale-page/HeaderAllSale.vue";
+import FooterAllSale from "./allsale-components/FooterAllSale.vue";
+import ProductsToggleAllSale from "./allsale-components/ProductsToggleAllSale.vue";
+import HeaderAllSale from "./allsale-components/HeaderAllSale.vue";
 
 export default {
   components: {

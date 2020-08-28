@@ -3,7 +3,8 @@
   "dependencies": {
     "@nuxt/http": "^0.3.8",
     "axios": "^0.19.2",
-    "nuxt-start": "latest"
+    "nuxt-start": "latest",
+    "vue-client-only": "^2.0.0"
   },
   "devDependencies": {
     "nuxt": "latest"
