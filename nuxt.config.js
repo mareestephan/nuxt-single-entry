@@ -13,6 +13,7 @@ export default {
 
     //   return ['/'].concat(routes)
     // }
+    dir: 'public'
   }
 
 }
