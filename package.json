@@ -2,7 +2,7 @@
   "name": "example-hello-world",
   "dependencies": {
     "@nuxt/http": "^0.3.8",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "nuxt-start": "latest",
     "vue-client-only": "^2.0.0"
   },
